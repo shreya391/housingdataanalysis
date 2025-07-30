@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Sales Analysis</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tableauPlaceholder {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .housing-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Housing Sales Analysis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story">Story</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page (Introduction) -->
+    <section id="home" class="content-section">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Housing Image" class="hero-image">
+            <h1 class="page-header">Housing Sales Analysis with Tableau</h1>
+            <p class="lead">Welcome to our in-depth analysis of housing sales data, brought to life through Tableau's powerful visualization tools. This platform offers interactive dashboards and compelling stories to uncover trends, patterns, and insights in the housing market. Navigate through the sections to explore key metrics such as sales prices, regional trends, and market dynamics.</p>
+            <p>Our visualizations provide a clear and engaging way to understand the complexities of the housing market. Dive into the dashboard for interactive data exploration or follow the story for a guided narrative of market trends.</p>
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="House Interior" class="housing-img">
+        </div>
+    </section>
+
+    <!-- Dashboard Page -->
+    <section id="dashboard" class="content-section" style="display: none;">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Housing Dashboard Image" class="hero-image">
+            <h1 class="page-header">Housing Sales Dashboard</h1>
+            <p class="text-center">Explore key housing sales metrics with this interactive Tableau dashboard. Analyze trends, compare regions, and dive into the data to uncover actionable insights.</p>
+            <div class='tableauPlaceholder' id='viz1753852580183' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Comprehensive House Data Analysis ' src='https://public.tableau.com/static/images/Bo/Book1_17538521175450/Dashboard1/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Book1_17538521175450&#47;Dashboard1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17538521175450/Dashboard1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1753852580183');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if ( divElement.offsetWidth > 800 ) {
+                    vizElement.style.minWidth='420px';
+                    vizElement.style.maxWidth='1650px';
+                    vizElement.style.width='100%';
+                    vizElement.style.minHeight='587px';
+                    vizElement.style.maxHeight='1587px';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else if ( divElement.offsetWidth > 500 ) {
+                    vizElement.style.minWidth='420px';
+                    vizElement.style.maxWidth='1650px';
+                    vizElement.style.width='100%';
+                    vizElement.style.minHeight='587px';
+                    vizElement.style.maxHeight='1587px';
+                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                } else {
+                    vizElement.style.width='100%';
+                    vizElement.style.height='1277px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <img src="https://images.unsplash.com/photo-1600585153490-76fb20a0f2b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="House Exterior" class="housing-img">
+        </div>
+    </section>
+
+    <!-- Story Page -->
+    <section id="story" class="content-section" style="display: none;">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1600597339175-3a6b9836f3e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Housing Story Image" class="hero-image">
+            <h1 class="page-header">Housing Sales Story</h1>
+            <p class="text-center">Follow the narrative of housing sales trends through this engaging Tableau story. Discover key insights and patterns in a guided, interactive format.</p>
+            <div class='tableauPlaceholder' id='viz1753852628014' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Story 1 ' src='https://public.tableau.com/static/images/Bo/Book1_17538521175450/Story1/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Book1_17538521175450&#47;Story1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Bo/Book1_17538521175450/Story1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1753852628014');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width='1754px';
+                vizElement.style.height='996px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <img src="https://images.unsplash.com/photo-1600585152915-18c7e4d79a2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Housing Community" class="housing-img">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Housing Sales Analysis. Powered by Tableau and Bootstrap.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript'>
+        // Simple page navigation
+        function showPage(pageId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`a[href="#${pageId}"]`).classList.add('active');
+        }
+
+        // Handle hash-based navigation
+        window.addEventListener('hashchange', () => {
+            const pageId = window.location.hash.slice(1) || 'home';
+            showPage(pageId);
+        });
+
+        // Initialize page
+        const initialPage = window.location.hash.slice(1) || 'home';
+        showPage(initialPage);
+    </script>
+</body>
+</html>
